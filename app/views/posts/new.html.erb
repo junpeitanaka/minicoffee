@@ -1,0 +1,9 @@
+<%= form_with model: @article,  local: true do |f| %>
+<div class="post-box">
+ コーヒの評価する
+ <%= f.text_area :text, class: "text", placeholder: "コメント"%>
+ <%= f.collection_select(:genre_id, Genre.all, :id, :name, {}, {class: "genre-select"})%>
+ <%= f.collection_select(:bitterness_id, Bitterness.all, :id, :name, {}, {class: "bitterness-select"})%>
+ <%= f.collection_select(:aroma_id, Aroma.all, :id, :name, {}, {class: "aroma-select"})%>
+ <%= f.collection_select(:rate_id, Rate.all, :id, :name, {}, {class: "rate-select"})%>
+ <%= f.submit "投稿する" ,class:"btn" %>

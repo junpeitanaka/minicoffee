@@ -1,2 +1,23 @@
-<h1>Posts#index</h1>
-<p>Find me in app/views/posts/index.html.erb</p>
+<h1>投稿一覧</h1>
+
+<%= link_to "新規投稿", posts_index_path, class: "postlist"%>
+
+<% @posts.each do |post|%>
+ <div class="post">
+   <div class="post-genre">
+    <%= post.genre.name %>
+   </div>
+   <div class="post-title">
+    <%= post.title.name %>
+   </div>
+   <div class="post-bitterness">
+    <%= post.bitterness.name %>
+   </div>
+   <div class="post-aroma">
+    <%= post.aroma.name %>
+   </div>
+   <div class="post-rate">
+    <%= post.rate.name %>
+   </div>
+  </div>
+ <%end%>
