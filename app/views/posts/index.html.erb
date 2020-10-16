@@ -1,23 +1,24 @@
 <h1>投稿一覧</h1>
 
-<%= link_to "新規投稿", posts_index_path, class: "postlist"%>
+<%= link_to "新規投稿", new_post_path, class: "postlist"%>
 
 <% @posts.each do |post|%>
  <div class="post">
+  コーヒ原産国
    <div class="post-genre">
     <%= post.genre.name %>
    </div>
-   <div class="post-title">
-    <%= post.title.name %>
-   </div>
+  苦味
    <div class="post-bitterness">
     <%= post.bitterness.name %>
    </div>
+  香り
    <div class="post-aroma">
     <%= post.aroma.name %>
-   </div>
+   </div> 
+  評価
    <div class="post-rate">
     <%= post.rate.name %>
-   </div>
+   </div> 
   </div>
  <%end%>

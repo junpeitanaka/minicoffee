@@ -1,27 +1,12 @@
 class Post < ApplicationRecord
+  
+extend ActiveHash::Associations::ActiveRecordExtensions
+belongs_to_active_hash :genre
+belongs_to_active_hash :bitterness
+belongs_to_active_hash :aroma
+belongs_to_active_hash :rate
 
 
-  def index
 
-  end
-
-  def new
-    @post = Post.new
-  end
-
-  def create
-    @post = Post.new(post_params)
-    if @post.save
-      redirect_to root_path
-    else
-      render :new
-    end
-  end
-
-  private
-
-  def post_params
-    params.require(:post).permit(:text, :genre_id, :)
-  end
-
+validates :genre_id, numericality:{other_than:1}
 end
