@@ -20,6 +20,6 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:text, :genre_id,:bitterness_id,:aroma_id, :rate_id)
+    params.require(:post).permit(:text, :genre_id,:bitterness_id,:aroma_id, :rate_id, :image)
   end
 end

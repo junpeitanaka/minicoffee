@@ -5,6 +5,7 @@ belongs_to_active_hash :genre
 belongs_to_active_hash :bitterness
 belongs_to_active_hash :aroma
 belongs_to_active_hash :rate
+has_one_attached :image
 
 
 
