@@ -1,28 +1,31 @@
-.post-box {
-  height:800px;
+
+
+
+.post {
+  height:1000px;
   background-color: lightgray;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 
-.bitterness-select {
+.post-bitterness {
   height: 30px;
   width: 300px;
-  margin: 30px;
+  margin: 30px 0px 30px 100px;
+
 }
 
-.aroma-select {
+.post-aroma {
   height: 30px;
   width: 300px;
-  margin: 30px;
+  margin: 30px 0px 30px 100px;
 }
 
-.rate-select {
+.post-rate {
   height: 30px;
   width: 300px;
-  margin: 30px;
+  margin: 30px 0px 30px 100px;
 }
 
 .text {
@@ -32,10 +35,10 @@
   margin-bottom: 20px;
 }
 
-.genre-select{
+.post-genre{
   height: 30px;
   width: 300px;
-  margin: 0px 0px 30px 0px;
+  margin: 30px 0px 30px 100px;
 }
 
 .btn {

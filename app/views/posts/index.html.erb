@@ -3,8 +3,11 @@
 <%= link_to "新規投稿", new_post_path, class: "postlist"%>
 
 <% @posts.each do |post|%>
- <div class="post">
-  コーヒ原産国
+<div class="post">
+ <div class='post-img-content'>
+  <%= image_tag post.image, class: "post-img" if post.image.attached? %>
+ <div class="origin"> コーヒ原産国</div>
+ 
    <div class="post-genre">
     <%= post.genre.name %>
    </div>
@@ -21,4 +24,6 @@
     <%= post.rate.name %>
    </div> 
   </div>
+  </div>
  <%end%>
+</div>

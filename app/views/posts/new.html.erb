@@ -1,15 +1,21 @@
 <%= form_with model: @post, local: true do |f| %>
 <div class="post-box">
  コーヒ原産国
- <%= f.collection_select(:genre_id, Genre.all, :id, :name, {}, {class: "genre-select"})%>
- 苦味
- <%= f.collection_select(:bitterness_id, Bitterness.all, :id, :name, {}, {class: "bitterness-select"})%>
- 香り
- <%= f.collection_select(:aroma_id, Aroma.all, :id, :name, {}, {class: "aroma-select"})%>
- 評価
- <%= f.collection_select(:rate_id, Rate.all, :id, :name, {}, {class: "rate-select"})%>
- コメント
- <%= f.text_area :text, class: "text", placeholder: "コメント"%>
- <%= f.submit "投稿する" ,class:"btn" %>
+  <div class="click-upload">
+    <p>
+    クリックして画像をアップロード
+    </p>
+   <%= f.file_field :image, id:"post-image" %> 
+  </div>
+  <%= f.collection_select(:genre_id, Genre.all, :id, :name, {}, {class: "genre-select"})%>
+  苦味
+  <%= f.collection_select(:bitterness_id, Bitterness.all, :id, :name, {}, {class: "bitterness-select"})%>
+  香り
+  <%= f.collection_select(:aroma_id, Aroma.all, :id, :name, {}, {class: "aroma-select"})%>
+  評価
+  <%= f.collection_select(:rate_id, Rate.all, :id, :name, {}, {class: "rate-select"})%>
+  コメント
+  <%= f.text_area :text, class: "text", placeholder: "コメント"%>
+  <%= f.submit "投稿する" ,class:"btn" %>
  </div>
  <% end %>

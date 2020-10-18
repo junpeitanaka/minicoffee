@@ -16,7 +16,7 @@ h1{
 }
 .post{
   height:300px;
-  background-color:rgb(245, 238, 238);
+  background-color:whitesmoke;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -58,8 +58,21 @@ h1{
   font-size: 16px;
   border: 1px solid;
   padding: 5px;
-  background-color: whitesmoke;
+  background-color: white;
   margin:auto;
 }
 
+.post-img-content{
+  display: flow-root;
+  text-align : center
 
+}
+
+.post-img{
+
+  width: 500px;
+  height: 500px;
+  object-fit: contain;
+  flex-direction: column;
+
+}
