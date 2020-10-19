@@ -14,8 +14,10 @@ h1{
   margin: 0 auto;
   margin-bottom: 20px;
 }
+
+
 .post{
-  height:300px;
+  height: auto;
   background-color:whitesmoke;
   display: flex;
   align-items: center;
@@ -30,14 +32,14 @@ h1{
   border: 1px solid;
   padding: 5px;
   background-color: whitesmoke;
-  margin:auto;
+  margin:0 0 15px 0;
 }
 .post-genre{
   font-size: 16px;
   border: 1px solid;
   padding: 5px;
   background-color: whitesmoke;
-  margin:auto;
+  margin:0 0 15px 0;
 }
 
 .post-title{
@@ -46,20 +48,37 @@ h1{
   margin:auto;
 }
 
+.post-text{
+  font-size: 16px;
+  border: 1px solid;
+  padding: 5px;
+  background-color: whitesmoke;
+  margin:0 0 15px 0;
+}
+
 .post-aroma{
   font-size: 16px;
   border: 1px solid;
   padding: 5px;
   background-color: whitesmoke;
-  margin:auto;
+  margin:0 0 15px 0;
 }
 
 .post-rate{
   font-size: 16px;
   border: 1px solid;
   padding: 5px;
-  background-color: white;
-  margin:auto;
+  background-color: whitesmoke;
+  margin:0 0 15px 0;
+}
+.text-comment{
+ 
+  width: 300px;
+  margin: 0px 0px 30px 100px;
+  resize:none;
+  margin: 0 auto;
+  background-color: whitesmoke;
+
 }
 
 .post-img-content{
@@ -68,8 +87,8 @@ h1{
 
 }
 
-.post-img{
 
+.post-img{
   width: 500px;
   height: 500px;
   object-fit: contain;

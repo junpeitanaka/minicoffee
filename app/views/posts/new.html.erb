@@ -1,12 +1,12 @@
 <%= form_with model: @post, local: true do |f| %>
 <div class="post-box">
- コーヒ原産国
+  <div class="post-explain">新規投稿</div>
   <div class="click-upload">
-    <p>
-    クリックして画像をアップロード
-    </p>
+   
+
    <%= f.file_field :image, id:"post-image" %> 
   </div>
+  <div class="post-origin">コーヒ原産国</div>
   <%= f.collection_select(:genre_id, Genre.all, :id, :name, {}, {class: "genre-select"})%>
   苦味
   <%= f.collection_select(:bitterness_id, Bitterness.all, :id, :name, {}, {class: "bitterness-select"})%>

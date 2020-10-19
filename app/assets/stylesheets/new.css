@@ -1,51 +1,63 @@
 
 
 
-.post {
+.post-box {
   height:1000px;
   background-color: lightgray;
   display: flex;
-  justify-content: center;
   flex-direction: column;
-}
-
-.post-bitterness {
-  height: 30px;
-  width: 300px;
-  margin: 30px 0px 30px 100px;
+  text-align: center;
 
 }
-
-.post-aroma {
-  height: 30px;
+.post-explain{
   width: 300px;
-  margin: 30px 0px 30px 100px;
+  margin: 0px 0px 30px 100px;
+  margin: 30px auto;
+  background-color: orange;
+  color: white;
+}
+.bitterness-select {
+  width: 300px;
+  margin: 0px 0px 30px 100px;
+  border: 1px solid white;
+  margin: 0 auto;
 }
 
-.post-rate {
-  height: 30px;
+.aroma-select {
   width: 300px;
-  margin: 30px 0px 30px 100px;
+  margin: 00px 0px 30px 100px;
+  border: 1px solid white;
+  margin: 0 auto;
+}
+
+.rate-select{
+  width: 300px;
+  margin: 0px 0px 30px 100px;
+  border: 1px solid white;
+  margin: 0 auto;
 }
 
 .text {
-  height: 100px;
   width: 300px;
+  margin: 0px 0px 30px 100px;
   resize:none;
-  margin-bottom: 20px;
+  padding: 15px;
+  background-color: white;
+  margin: 0 auto;
 }
 
-.post-genre{
-  height: 30px;
+.genre-select{
   width: 300px;
-  margin: 30px 0px 30px 100px;
+  margin: 0px 0px 30px 100px;
+  border: 1px solid white;
+  margin: 0 auto;
 }
 
 .btn {
   width: 200px;
-  margin-top: 20px;
   padding: 15px;
   border: 1px solid white;
   background-color: orange;
   color: white;
+  margin: 0 auto;
 }

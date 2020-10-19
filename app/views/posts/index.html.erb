@@ -4,26 +4,30 @@
 
 <% @posts.each do |post|%>
 <div class="post">
- <div class='post-img-content'>
-  <%= image_tag post.image, class: "post-img" if post.image.attached? %>
- <div class="origin"> コーヒ原産国</div>
- 
-   <div class="post-genre">
-    <%= post.genre.name %>
-   </div>
-  苦味
-   <div class="post-bitterness">
-    <%= post.bitterness.name %>
-   </div>
-  香り
-   <div class="post-aroma">
-    <%= post.aroma.name %>
-   </div> 
-  評価
+  <div class='post-img-content'>
+   <%= image_tag post.image, class: "post-img" if post.image.attached? %>
+   <div class="rate">評価</div>
    <div class="post-rate">
     <%= post.rate.name %>
    </div> 
-  </div>
-  </div>
+   <div class="origin"> コーヒ原産国</div>
+   <div class="post-genre">
+    <%= post.genre.name %>
+   </div>
+   <div class="bitterness">苦味</div>
+   <div class="post-bitterness">
+    <%= post.bitterness.name %>
+   </div>
+   <div class="aroma">香り</div>
+   <div class="post-aroma">
+    <%= post.aroma.name %>
+    </div> 
+    <div class="text-comment">コメント
+   </div>
+    <div class="post-text">
+     <%= post.text%>
+    </div>
+   </div>
+   </div>
  <%end%>
 </div>

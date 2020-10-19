@@ -5,7 +5,7 @@
 
 | Column           | Type       | Options                        |
 | ------- ---------| ---------- | ------------------------------ |
-| taste            | text       |                                |
+| text             | text       |                                |
 | bitterness_id    | integer    | null: false, foreign_key: true |
 | aroma_id         | integer    | null: false, foreign_key:true  |
 | rate_id          | integer    | null: false, foreign_key:true  |
