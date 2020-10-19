@@ -1,0 +1,97 @@
+h1{
+  text-align: center;
+}
+
+.postlist{
+  display: block;
+  width: 150px;
+  padding: 10px;
+  border: 1px solid white;
+  background-color: orange;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+
+.post{
+  height: auto;
+  background-color:whitesmoke;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #fff;
+  padding: 20px;
+  margin:10px;
+}
+
+.post-bitterness{
+  font-size: 16px;
+  border: 1px solid;
+  padding: 5px;
+  background-color: whitesmoke;
+  margin:0 0 15px 0;
+}
+.post-genre{
+  font-size: 16px;
+  border: 1px solid;
+  padding: 5px;
+  background-color: whitesmoke;
+  margin:0 0 15px 0;
+}
+
+.post-title{
+  font-size: 20px;
+  font-weight: bold;
+  margin:auto;
+}
+
+.post-text{
+  font-size: 16px;
+  border: 1px solid;
+  padding: 5px;
+  background-color: whitesmoke;
+  margin:0 0 15px 0;
+}
+
+.post-aroma{
+  font-size: 16px;
+  border: 1px solid;
+  padding: 5px;
+  background-color: whitesmoke;
+  margin:0 0 15px 0;
+}
+
+.post-rate{
+  font-size: 16px;
+  border: 1px solid;
+  padding: 5px;
+  background-color: whitesmoke;
+  margin:0 0 15px 0;
+}
+.text-comment{
+ 
+  width: 300px;
+  margin: 0px 0px 30px 100px;
+  resize:none;
+  margin: 0 auto;
+  background-color: whitesmoke;
+
+}
+
+.post-img-content{
+  display: flow-root;
+  text-align : center
+
+}
+
+
+.post-img{
+  width: 500px;
+  height: 500px;
+  object-fit: contain;
+  flex-direction: column;
+
+}

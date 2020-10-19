@@ -1,0 +1,33 @@
+<h1>投稿一覧</h1>
+
+<%= link_to "新規投稿", new_post_path, class: "postlist"%>
+
+<% @posts.each do |post|%>
+<div class="post">
+  <div class='post-img-content'>
+   <%= image_tag post.image, class: "post-img" if post.image.attached? %>
+   <div class="rate">評価</div>
+   <div class="post-rate">
+    <%= post.rate.name %>
+   </div> 
+   <div class="origin"> コーヒ原産国</div>
+   <div class="post-genre">
+    <%= post.genre.name %>
+   </div>
+   <div class="bitterness">苦味</div>
+   <div class="post-bitterness">
+    <%= post.bitterness.name %>
+   </div>
+   <div class="aroma">香り</div>
+   <div class="post-aroma">
+    <%= post.aroma.name %>
+    </div> 
+    <div class="text-comment">コメント
+   </div>
+    <div class="post-text">
+     <%= post.text%>
+    </div>
+   </div>
+   </div>
+ <%end%>
+</div>
