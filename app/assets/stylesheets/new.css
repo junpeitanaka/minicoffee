@@ -15,26 +15,28 @@
   margin: 30px auto;
   background-color: orange;
   color: white;
+  border: 1px solid white;
+
 }
 .bitterness-select {
   width: 300px;
   margin: 0px 0px 30px 100px;
   border: 1px solid white;
-  margin: 0 auto;
+  margin: 0 auto 10px;
 }
 
 .aroma-select {
   width: 300px;
   margin: 00px 0px 30px 100px;
   border: 1px solid white;
-  margin: 0 auto;
+  margin: 0 auto 10px;
 }
 
 .rate-select{
   width: 300px;
   margin: 0px 0px 30px 100px;
   border: 1px solid white;
-  margin: 0 auto;
+  margin: 0 auto 10px;
 }
 
 .text {
@@ -50,7 +52,7 @@
   width: 300px;
   margin: 0px 0px 30px 100px;
   border: 1px solid white;
-  margin: 0 auto;
+  margin: 0 auto 10px;
 }
 
 .btn {
@@ -59,5 +61,5 @@
   border: 1px solid white;
   background-color: orange;
   color: white;
-  margin: 0 auto;
+  margin: 15px auto 15px;
 }
